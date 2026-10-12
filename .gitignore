@@ -1,0 +1,32 @@
+# 虚拟环境与缓存（体积很大，不要提交）
+.venv/
+.uv-cache/
+.uv-python/
+
+# 模型与图形缓存（预训练权重 / HuggingFace 模型 / matplotlib 字体缓存）
+# 删掉没关系，下次运行会自动重新下载或重建
+.cache/
+
+# torch.compile 的算子缓存，会出现在工作区根目录，可能很大
+torchinductor_*/
+
+# 数据与产物
+# 开头的 / 不能省：不带斜杠的 "data/" 会匹配**任意层级**下叫 data 的目录，
+# 那样连 project_rag/data/eval_set.example.jsonl（要提交的评测集模板）
+# 也会被一起排除掉。
+/data/
+
+# 模型权重不提交：体积大（单个 40MB+），而且用代码 + 数据 + 固定种子就能复现。
+# 不带路径前缀，所以 project_cv/outputs/... 里的权重也会被正确排除。
+*.pt
+*.pth
+*.ckpt
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# 编辑器
+.vscode/
+.idea/

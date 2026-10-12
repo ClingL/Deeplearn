@@ -1,0 +1,19 @@
+{
+  "run_name": "06_no_aug",
+  "arch": "resnet18",
+  "pretrained": true,
+  "augment": "none",
+  "freeze_epochs": 3,
+  "backbone_lr": 0.0001,
+  "lr": 0.001,
+  "epochs_run": 40,
+  "best_epoch": 39,
+  "params_total": 11228838,
+  "val_acc": 0.9610687022900763,
+  "val_f1_macro": 0.9542271931315544,
+  "val_loss": 1.2039006746452274,
+  "test_acc": 0.9479591836734694,
+  "test_f1_macro": 0.9423455966849373,
+  "test_loss": 1.242543869602437,
+  "train_minutes": 17.55
+}

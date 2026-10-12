@@ -1,0 +1,19 @@
+{
+  "run_name": "04_strong_aug",
+  "arch": "resnet18",
+  "pretrained": true,
+  "augment": "strong",
+  "freeze_epochs": 3,
+  "backbone_lr": 0.0001,
+  "lr": 0.001,
+  "epochs_run": 28,
+  "best_epoch": 18,
+  "params_total": 11228838,
+  "val_acc": 0.9801526717557252,
+  "val_f1_macro": 0.9763358742119402,
+  "val_loss": 0.99478897356805,
+  "test_acc": 0.9663265306122449,
+  "test_f1_macro": 0.9657548273198029,
+  "test_loss": 1.0169918843678065,
+  "train_minutes": 12.33
+}

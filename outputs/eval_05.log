@@ -1,0 +1,49 @@
+Running: python project_cv\src\evaluate.py --ckpt project_cv\outputs\05_effnetb0\best.pt --data-dir data\flowers_split
+========================================================================
+错误分析: best.pt
+========================================================================
+arch=efficientnet_b0  类别数=102  img_size=224  seed=42
+训练时记录的 test acc=0.9755  f1_macro=0.9711
+[data] 已用 cat_to_name.json 映射类别名，例如 '1' -> 'pink primrose'
+[i] 类别数一致但名称不同，使用数据集当前的类别名（更可读）
+    ckpt: ['1', '10', '100']  ->  数据: ['pink primrose', 'globe thistle', 'blanket flower']
+分析划分: test  样本数: 980
+[model] efficientnet_b0 (随机初始化) -> 102 类, head='classifier'
+
+整体指标: acc=0.9755  f1_macro=0.9711  loss=0.2493
+
+最差的 10 个类别（面试时重点讲这些）:
+  类别                            准确率      样本数
+  carnation                  0.7143        7  .....................
+  sweet pea                  0.7143        7  .....................
+  japanese anemone           0.7143        7  .....................
+  pink primrose              0.7500        4  ......................
+  mexican aster              0.7500        4  ......................
+  canterbury bells           0.8000        5  ........................
+  sword lily                 0.8000       15  ........................
+  canna lily                 0.8000       10  ........................
+  ball moss                  0.8000        5  ........................
+  balloon flower             0.8333        6  .........................
+
+最容易混淆的 15 组:
+      2 次   sweet pea  ->  bougainvillea
+      1 次   sword lily  ->  monkshood
+      1 次   sword lily  ->  cyclamen
+      1 次   sword lily  ->  canterbury bells
+      1 次   sweet william  ->  tree poppy
+      1 次   pink primrose  ->  tree mallow
+      1 次   petunia  ->  rose
+      1 次   mexican aster  ->  osteospermum
+      1 次   magnolia  ->  canterbury bells
+      1 次   lotus lotus  ->  camellia
+      1 次   japanese anemone  ->  tree poppy
+      1 次   japanese anemone  ->  canterbury bells
+      1 次   hippeastrum  ->  sword lily
+      1 次   carnation  ->  sweet william
+      1 次   carnation  ->  rose
+
+混淆矩阵图 -> project_cv\outputs\05_effnetb0\eval\confusion_matrix.png
+错分样本拼图 -> project_cv\outputs\05_effnetb0\eval\misclassified.png
+分析汇总 -> project_cv\outputs\05_effnetb0\eval\summary.md
+
+把 summary.md 里「我的分析」那部分自己写完，然后贴进项目 README。

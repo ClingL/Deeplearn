@@ -1,0 +1,5 @@
+{"_comment": "这是示例评测集, 每行一个 JSON 对象, 不能有多行。请复制成 data/eval_set.jsonl 后替换成你自己 PDF 的真实问题和答案。字段说明: question=问题(必填); answer=标准答案(必填, 用于算答案准确率); source_page=正确答案所在的 PDF 页码(从 1 开始, 用于算 recall@k); source_doc=对应的 PDF 文件名(可选, 多文档索引时建议填写)。下划线开头的字段会被自动忽略。", "question": "这份文档的主要研究目标是什么?", "answer": "请填写你文档里的标准答案, 评测时会用关键词命中率或大模型裁判来和模型回答对比。", "source_page": 1, "source_doc": "example.pdf"}
+{"question": "作者使用了哪些数据集进行实验?", "answer": "请填写标准答案, 建议包含具体的数字和名称, 关键词命中率会更稳定。", "source_page": 3, "source_doc": "example.pdf"}
+{"question": "文中提出的方法相比基线提升了多少?", "answer": "请填写标准答案, 例如某个指标从多少提升到多少。", "source_page": 4, "source_doc": "example.pdf"}
+{"question": "这个方法有哪些已知的局限性?", "answer": "请填写标准答案。", "source_page": 5, "source_doc": "example.pdf"}
+{"question": "文档中给出的默认超参数是多少?", "answer": "请填写标准答案。", "source_page": 2, "source_doc": "example.pdf"}

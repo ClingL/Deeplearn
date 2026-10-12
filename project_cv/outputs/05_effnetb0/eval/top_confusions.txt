@@ -1,0 +1,17 @@
+     次数  真实                       -> 预测                      
+--------------------------------------------------------------
+      2  sweet pea                -> bougainvillea           
+      1  sword lily               -> monkshood               
+      1  sword lily               -> cyclamen                
+      1  sword lily               -> canterbury bells        
+      1  sweet william            -> tree poppy              
+      1  pink primrose            -> tree mallow             
+      1  petunia                  -> rose                    
+      1  mexican aster            -> osteospermum            
+      1  magnolia                 -> canterbury bells        
+      1  lotus lotus              -> camellia                
+      1  japanese anemone         -> tree poppy              
+      1  japanese anemone         -> canterbury bells        
+      1  hippeastrum              -> sword lily              
+      1  carnation                -> sweet william           
+      1  carnation                -> rose                    

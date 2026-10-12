@@ -1,0 +1,37 @@
+# ============================================================
+# 多模态文档问答系统 (RAG) 的额外依赖
+#
+# 说明: torch / numpy / pandas / scikit-learn / matplotlib 已经在项目的
+#      .venv 里装好了, 这里只列出本项目新引入的包。
+#
+# 安装方式 (务必使用项目的虚拟环境, 不要用系统 Python):
+#   Windows:
+#     .venv\Scripts\python.exe -m pip install -r project_rag\requirements-rag.txt
+#   macOS / Linux:
+#     .venv/bin/python -m pip install -r project_rag/requirements-rag.txt
+# ============================================================
+
+# 文本向量模型 (bge-small-zh-v1.5) 与 CLIP 图像向量模型
+sentence-transformers>=3.0.0
+
+# 向量检索 (CPU 版本即可, 无需 GPU 编译)
+faiss-cpu>=1.8.0
+
+# PDF 解析: 抽文本 + 抽内嵌图片
+pymupdf>=1.24.0
+
+# 调用 OpenAI 兼容接口 (DeepSeek / 智谱 / 阿里百炼 / OpenAI 通用)
+openai>=1.30.0
+
+# 读取 .env 配置
+python-dotenv>=1.0.0
+
+# 终端美化输出 (可选, 缺失时自动退化为普通 print)
+rich>=13.7.0
+
+# ------------------------------------------------------------
+# 注意: BM25 关键词检索与中文分词都是本项目自己实现的
+# (见 src/index.py 的 BM25 / tokenize), 因此**不需要**
+# rank-bm25 和 jieba。这两个包在 Windows 上没有预编译 wheel,
+# 在受限环境下会现场编译并失败, 所以刻意不引入。
+# ------------------------------------------------------------

@@ -1,0 +1,19 @@
+{
+  "run_name": "01_baseline",
+  "arch": "smallcnn",
+  "pretrained": false,
+  "augment": "basic",
+  "freeze_epochs": 0,
+  "backbone_lr": 0.0001,
+  "lr": 0.001,
+  "epochs_run": 40,
+  "best_epoch": 40,
+  "params_total": 1199430,
+  "val_acc": 0.6076335877862595,
+  "val_f1_macro": 0.5752095062533421,
+  "val_loss": 2.2032217306035164,
+  "test_acc": 0.5663265306122449,
+  "test_f1_macro": 0.517138986888605,
+  "test_loss": 2.2595483585279816,
+  "train_minutes": 16.41
+}

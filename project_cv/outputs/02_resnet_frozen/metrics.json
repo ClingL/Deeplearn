@@ -1,0 +1,19 @@
+{
+  "run_name": "02_resnet_frozen",
+  "arch": "resnet18",
+  "pretrained": true,
+  "augment": "basic",
+  "freeze_epochs": 40,
+  "backbone_lr": 0.0001,
+  "lr": 0.001,
+  "epochs_run": 40,
+  "best_epoch": 33,
+  "params_total": 11228838,
+  "val_acc": 0.9366412213740458,
+  "val_f1_macro": 0.9278841446913911,
+  "val_loss": 1.2132778455282895,
+  "test_acc": 0.9214285714285714,
+  "test_f1_macro": 0.9180926787813977,
+  "test_loss": 1.246912753825285,
+  "train_minutes": 11.45
+}

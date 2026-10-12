@@ -1,0 +1,52 @@
+# 依赖清单（不含 PyTorch）—— 由 setup.sh 自动安装
+
+#> 为什么这里没有 torch / torchvision / torchaudio？
+#> 因为装哪个版本取决于服务器的 GPU 和驱动。PyTorch 必须从专门的 CUDA
+#> wheel 源安装，混在 requirements.txt 里很容易装成 CPU 版还察觉不到。
+#> `setup.sh` 会识别你的 GPU 并自动选对频道。
+
+## 手动安装 PyTorch（不用 setup.sh 时）
+
+#```bash
+# Linux 服务器：PyPI 上的 torch 默认就带 CUDA，一般直接装就行
+#pip install torch torchvision torchaudio
+
+# 指定 CUDA 版本（按显卡选；RTX 5090 必须 cu128 以上）
+#pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+#pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
+
+# 只要 CPU
+#pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+#```
+
+## 版本对照速查
+
+#| 显卡 | 算力 | 可用 CUDA 频道 |
+#|---|---|---|
+#| RTX 5090 / B200（Blackwell） | sm_120 | **cu128 及以上** |
+#| RTX 3090 | sm_86 | cu124 / cu126 / cu128 |
+#| RTX 4090 | sm_89 | cu124 / cu126 / cu128 |
+#| A100 / A800 | sm_80 | cu124 / cu126 / cu128 |
+#| V100 / T4 | sm_70 / sm_75 | cu121 / cu124 |
+#| 驱动 < 530 | — | 先升级驱动，或用 `--cpu` |
+
+#本项目在下面这组版本上验证通过（Windows / RTX 5070 / sm_120）：
+
+#```
+#torch 2.11.0+cu128 | torchvision 0.26.0+cu128 | torchaudio 2.11.0+cu128
+#```
+
+## 其余依赖
+
+#用 `>=` 而不是 `==`，是为了兼容服务器的 Python 版本（3.10 ~ 3.13 都能装）。
+
+#```
+numpy>=1.26
+pandas>=2.0
+scikit-learn>=1.3
+matplotlib>=3.7
+joblib>=1.3
+pillow>=10.0
+tqdm>=4.65
+jupyter
+#```

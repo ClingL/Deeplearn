@@ -1,0 +1,104 @@
+类别                              准确率      样本数      正确数
+-------------------------------------------------------
+carnation                    0.7143        7        5
+sweet pea                    0.7143        7        5
+japanese anemone             0.7143        7        5
+pink primrose                0.7500        4        3
+mexican aster                0.7500        4        3
+canterbury bells             0.8000        5        4
+sword lily                   0.8000       15       12
+canna lily                   0.8000       10        8
+ball moss                    0.8000        5        4
+balloon flower               0.8333        6        5
+bearded iris                 0.8333        6        5
+magnolia                     0.8750        8        7
+bee balm                     0.8750        8        7
+sweet william                0.8889        9        8
+hippeastrum                  0.8889        9        8
+camellia                     0.9091       11       10
+lotus lotus                  0.9412       17       16
+petunia                      0.9677       31       30
+globe thistle                1.0000        6        6
+blanket flower               1.0000        5        5
+trumpet creeper              1.0000        7        7
+blackberry lily              1.0000        5        5
+snapdragon                   1.0000       10       10
+colt's foot                  1.0000       11       11
+king protea                  1.0000        6        6
+spear thistle                1.0000        7        7
+yellow iris                  1.0000        6        6
+globe-flower                 1.0000        5        5
+purple coneflower            1.0000        9        9
+peruvian lily                1.0000       10       10
+hard-leaved pocket orchid    1.0000        7        7
+giant white arum lily        1.0000        7        7
+fire lily                    1.0000        5        5
+pincushion flower            1.0000        7        7
+fritillary                   1.0000       11       11
+red ginger                   1.0000        5        5
+grape hyacinth               1.0000        5        5
+corn poppy                   1.0000        5        5
+prince of wales feathers     1.0000        5        5
+stemless gentian             1.0000        8        8
+artichoke                    1.0000        9        9
+garden phlox                 1.0000        5        5
+love in the mist             1.0000        5        5
+alpine sea holly             1.0000        5        5
+ruby-lipped cattleya         1.0000        9        9
+cape flower                  1.0000       14       14
+great masterwort             1.0000        7        7
+siam tulip                   1.0000        5        5
+lenten rose                  1.0000        8        8
+barbeton daisy               1.0000       15       15
+daffodil                     1.0000        7        7
+poinsettia                   1.0000       11       11
+bolero deep blue             1.0000        5        5
+wallflower                   1.0000       24       24
+marigold                     1.0000        9        9
+buttercup                    1.0000        9        9
+oxeye daisy                  1.0000        6        6
+english marigold             1.0000        8        8
+common dandelion             1.0000       11       11
+wild pansy                   1.0000       10       10
+primula                      1.0000       10       10
+sunflower                    1.0000        7        7
+pelargonium                  1.0000        8        8
+bishop of llandaff           1.0000       14       14
+gaura                        1.0000        8        8
+geranium                     1.0000       13       13
+orange dahlia                1.0000        8        8
+tiger lily                   1.0000        5        5
+pink-yellow dahlia           1.0000       13       13
+cautleya spicata             1.0000        5        5
+black-eyed susan             1.0000        6        6
+silverbush                   1.0000        6        6
+californian poppy            1.0000       13       13
+osteospermum                 1.0000        8        8
+spring crocus                1.0000        5        5
+windflower                   1.0000        7        7
+moon orchid                  1.0000        5        5
+tree poppy                   1.0000        8        8
+gazania                      1.0000       10       10
+azalea                       1.0000       12       12
+water lily                   1.0000       22       22
+rose                         1.0000       21       21
+thorn apple                  1.0000       14       14
+morning glory                1.0000       12       12
+passion flower               1.0000       31       31
+toad lily                    1.0000        5        5
+bird of paradise             1.0000       10       10
+anthurium                    1.0000       12       12
+frangipani                   1.0000       20       20
+clematis                     1.0000       12       12
+hibiscus                     1.0000       16       16
+columbine                    1.0000       10       10
+desert-rose                  1.0000        7        7
+tree mallow                  1.0000        7        7
+cyclamen                     1.0000       17       17
+watercress                   1.0000       23       23
+monkshood                    1.0000        6        6
+foxglove                     1.0000       20       20
+bougainvillea                1.0000       15       15
+mallow                       1.0000        8        8
+mexican petunia              1.0000       10       10
+bromelia                     1.0000        8        8

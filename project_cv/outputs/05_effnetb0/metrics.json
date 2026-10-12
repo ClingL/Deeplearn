@@ -1,0 +1,19 @@
+{
+  "run_name": "05_effnetb0",
+  "arch": "efficientnet_b0",
+  "pretrained": true,
+  "augment": "strong",
+  "freeze_epochs": 3,
+  "backbone_lr": 0.0001,
+  "lr": 0.001,
+  "epochs_run": 25,
+  "best_epoch": 15,
+  "params_total": 4138210,
+  "val_acc": 0.983969465648855,
+  "val_f1_macro": 0.9809031068528553,
+  "val_loss": 0.9610251102738708,
+  "test_acc": 0.9755102040816327,
+  "test_f1_macro": 0.9711494307373588,
+  "test_loss": 0.9888568921964995,
+  "train_minutes": 12.48
+}
